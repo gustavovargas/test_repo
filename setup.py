@@ -1,5 +1,9 @@
 from distutils.core import setup
 
+def read_requirements():
+    with open('requirements.txt', 'r') as f:
+        return [line.strip() for line in f.readlines()]
+    
 setup(
     name='ec_test',
     version='0.0.1',
@@ -11,7 +15,5 @@ setup(
     include_package_data=True,
     author_email='ge.vargasn@gmail.com',
     description='Test methods',
-    install_requires=[
-        "requests==2.28.0"
-    ]
+    install_requires=read_requirements()
 )
