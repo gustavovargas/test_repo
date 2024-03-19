@@ -12,6 +12,6 @@ setup(
     author_email='ge.vargasn@gmail.com',
     description='Test methods',
     install_requires=[
-        "pandas==1.2.0"
+        "requests==2.28.0"
     ]
 )
